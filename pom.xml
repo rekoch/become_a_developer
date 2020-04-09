@@ -18,6 +18,7 @@
     <modules>
         <module>BakeryFirstIteration</module>
         <module>BakerySecondIteration</module>
+        <module>BakeryThirdIteration</module>
     </modules>
 
 </project>

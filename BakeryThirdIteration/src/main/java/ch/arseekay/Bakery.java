@@ -2,7 +2,7 @@ package ch.arseekay;
 
 public class Bakery {
 
-    String[] bakeCake(String cakeName, double cash, int amountOfCakes){
+    Cake[] bakeCake(String cakeName, double cash, int amountOfCakes){
         String [] cakeList = {"Erdbeere", "Schokolade", "Honig"};
         double price = 19.95;
         boolean isNameValid = false;
@@ -18,10 +18,10 @@ public class Bakery {
             return null;
         }
 
-        String [] cakes = new String [amountOfCakes];
+        Cake [] cakes = new Cake [amountOfCakes];
 
         for (int i = 0; i < cakes.length; i++) {
-            cakes[i] = "ich bin cake nummer " + i + " und bin ein " + cakeName + "-Cake";
+            cakes[i] = new Cake(cakeName, price);
         }
         return cakes;
     }

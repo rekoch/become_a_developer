@@ -17,6 +17,10 @@ public class Bakery {
         cakesOfBakery.add(new Cake("Blaubeere", 13.00));
     }
 
+    /**
+     * get possible List of cakes
+     * @return a list of cakes by name
+     */
     List<String> getListOfCakes() {
         List<String> listOfCakes = new ArrayList<>();
         for (Cake cake : cakesOfBakery) {
@@ -44,9 +48,9 @@ public class Bakery {
     /**
      * Bakes an amount of a cake
      *
-     * @param nameOfCake    object of Type Cake, which needs to be baked
+     * @param nameOfCake    name of cake, which needs to be baked
      * @param amountOfCakes amount of cakes
-     * @return a list of baked cakes
+     * @return a list of baked cakes or an empty list, if cakes does not exist
      */
     List<Cake> bakeAmountOfCakes(String nameOfCake, int amountOfCakes) {
         List<Cake> bakedCakes = new ArrayList<>();
